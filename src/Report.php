@@ -12,7 +12,7 @@ class Report
     {
         $this->title = $title;
     }
-
+a
     public function setDate($date = null)
     {
         if (!$date) {
