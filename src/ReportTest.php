@@ -37,6 +37,6 @@ class ReportTest extends \PHPUnit_Framework_TestCase
         var $reportInformationFormatted = $formatter->format($reportInformation);
         var $sentStatus = $mailer->send($reportInformationFormatted);
 
-        $this->assertTrue($mailer->send($reportInformationFormatted));
+        $this->assertTrue($sentStatus);
     }
 }
